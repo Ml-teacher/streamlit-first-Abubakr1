@@ -6,10 +6,8 @@ st.title('😁😁😁  First App Abubakr')
 st.write('Hello world!')
 
 with st.expander('Initial data'):
-  st.write('**Raw data**')
   df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv')
-  df
-
+  
   st.write('**X**')
   X_raw = df.drop('species', axis=1)
   X_raw
